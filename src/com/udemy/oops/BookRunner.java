@@ -8,10 +8,16 @@ public class BookRunner {
 		Book cleanCode = new Book();
 
 		artOfComputerProgramming.openBook();
-
 		effectiveJava.openBook();
-
 		cleanCode.openBook();
+
+		artOfComputerProgramming.countCopies(4000);
+		effectiveJava.countCopies(3000);
+		cleanCode.countCopies(2000);
+
+		artOfComputerProgramming.countCopies(5000);
+		effectiveJava.countCopies(4000);
+		cleanCode.countCopies(3000);
 	}
 
 }
