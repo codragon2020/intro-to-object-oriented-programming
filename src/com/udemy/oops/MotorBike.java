@@ -9,7 +9,7 @@ public class MotorBike {
 	}
 
 	public void setSpeed(int speed) {
-		if (speed > 0) {
+		if (speed >= 0) {
 			this.speed = speed;
 		}
 	}
@@ -19,9 +19,7 @@ public class MotorBike {
 	}
 
 	public void decreaseSpeed(int howMuch) {
-		if (this.speed - howMuch >= 0) {
-			this.speed -= howMuch;
-		}
+		setSpeed(this.speed - howMuch);
 	}
 
 	void start() {
